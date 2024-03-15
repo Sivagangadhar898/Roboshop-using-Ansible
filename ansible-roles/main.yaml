@@ -1,0 +1,6 @@
+- name: Installing roboshop project
+  hosts: localhost
+  become: yes
+  roles:
+  - "{{component}}"
+  

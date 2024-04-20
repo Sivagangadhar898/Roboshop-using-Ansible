@@ -73,7 +73,7 @@
       state: installed
   
   - name: load cart data
-    ansible.builtin.command: mongo --host mongodb.joiningindevops.online < /app/schema/cart.js
+    ansible.builtin.command: mongo --host mongodb.joiningindevops.online < /app/server/cart.js
   
   - name: restart cart
     ansible.builtin.service:
